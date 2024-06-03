@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: heeboth;
+  src: url(assets/fonts/heebo.thin.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: heebolt;
+  src: url(assets/fonts/heebo.light.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: heebo;
+  src: url(assets/fonts/heebo.regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: heebobd;
+  src: url(assets/fonts/heebo.extrabold.ttf) format("opentype");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "heebo", sans-serif;
+}
+
+.books {
+  font-family: "heebolt", sans-serif !important;
+  color: #333;
+  font-size: 34px;
+}
+
+.ioasys {
+  font-family: "heebobd", sans-serif;
+  color: #333;
+  font-size: 42px;
+}
+
+.bg-image {
+  background-image: url('assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.input-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem; 
+  padding: 0.5rem 1rem; 
+}
+
+input::placeholder {
+  color: #ffffff; 
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+form {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+button {
+  background-color: #ffffff;
+  color: #e91e63;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+}
+
+.label-form {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+  font-size: 36px; 
+  margin-bottom: 0px !important; 
+  color: white; 
+  text-align: left; 
+  font-family: "heebolt", sans-serif;
+}
+
+.title span {
+  font-family: "heebobd", sans-serif;
+  font-size: 36px;
+  color: white; 
+}
+
+.font-bold {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+
+.button-container {
+  align-items: end;
+  display: grid;
+}
+
+.error-message {
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-message::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(255, 255, 255, 0.5) transparent;
+}
+
+
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-image-dash {
+  background-image: url("../src/assets/background-books.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+img {
+  max-height: 120px;
+  object-fit: cover;
+}
+
+h3 {
+  color: #333;
+}
+
+.grid {
+  gap: 2rem; /* Ajusta o espaçamento entre os cards */
+}
+
+button {
+  background-color: #e91e63; /* Ajusta a cor do botão */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.book-card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 160px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.book-card h3 {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.book-card p {
+  color: #777;
+  font-size: 12px;
+}
+
+.book-card p.text-pink-600 {
+  color: #e91e63;
+  font-size: 12px;
+}
+
+.book-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.book-info {
+  line-height: normal;
+  font-size: 12px;
+}
+
+.book-info span {
+    line-height: normal;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid grey;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pagination-button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid grey;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pagination-button:disabled {
+  background-color: transparent;
+  border-color: #333;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.pagination-text {
+  color: #333;
+  font-size: 12px;
+}
+
+.pagination-bold {
+  font-weight: bold;
+}
+
+.fixed {
+  z-index: 50;
+}
+
+.book-modal img {
+  max-height: 500px;
+}
+
+.modal-close {
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 0 0.5rem;
+}
+
+.modal-info p {
+  font-size: 12px;
+}
+
+.modal-info .text-gray-800 {
+  color: #333;
+  font-weight: bold;
+}
+
+.modal-info .text-gray-700 {
+  color: #777;
+}
+
+.modal-info p span {
+  font-weight: lighter;
+  float: right;
+}
+
+.modal-info p::first-line {
+  font-weight: bold;
+}
+
+.mt-4 h4 {
+  font-weight: bold;
+  color: #333;
+}
+
+.mt-4 p {
+  color: #777;
+  font-size: 12px;
+}
+
+.book-modal {
+  flex-grow: 1;
+}
+
+.relative {
+  display: flex;
+  flex-direction: column;
+}
+
+.resenha {
+  margin-top: auto;
+}
+
+.resenha h4 {
+    font-size: 12px;
+    color: #333;
+}
+
+@media (max-width: 640px) {
+  .book-modal {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-modal {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+  
+  .ml-8 {
+    margin-left: 0;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+}
+

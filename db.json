@@ -1,0 +1,42 @@
+{
+  "users": 
+    {
+      "id": 1,
+      "user": "Guilherme",
+      "email": "books@ioasys.com.br",
+      "password": "123456789"
+    }
+  ,
+  "books": [
+    { "id": 1, "title": "Crossing the Chasm", "author": "Geoffrey A. Moore", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/crossing-the-chasm.png" },
+    { "id": 2, "title": "Don't Make me Think", "author": "Steve Krug", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": ".../../../assets/books/dont-make-me-think.png" },
+    { "id": 3, "title": "The Design of Everyday Things", "author": "Don Norman", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-design-of-everyday-things.png" },
+    { "id": 4, "title": "Sprint", "author": "Jake Knapp", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/sprint.png" },
+    { "id": 5, "title": "Change By Design", "author": "Tim Brown", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/change.png" },
+    { "id": 6, "title": "Web Design 101", "author": "Mary Johnson, William Pitt", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/web-design-101.png" },
+    { "id": 7, "title": "Creative Selection", "author": "Ken Kocienda", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/creative-selection.png" },
+    { "id": 8, "title": "The Power of Habit", "author": "Charles Duhigg", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-power-of-habit.png" },
+    { "id": 9, "title": "The Making of a Manager", "author": "Julie Zhuo", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-making-of-a-manager.png" },
+    { "id": 10, "title": "Hooked", "author": "Nir Eyal, Ryan Hoover", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/hooked.png" },
+    { "id": 11, "title": "Crossing the Chasm", "author": "Geoffrey A. Moore", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/crossing-the-chasm.png" },
+    { "id": 12, "title": "Don't Make me Think", "author": "Steve Krug", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/dont-make-me-think.png" },
+    { "id": 13, "title": "The Design of Everyday Things", "author": "Don Norman", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-design-of-everyday-things.png" },
+    { "id": 14, "title": "Sprint", "author": "Jake Knapp", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/sprint.png" },
+    { "id": 15, "title": "Change By Design", "author": "Tim Brown", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/change.png" },
+    { "id": 16, "title": "Web Design 101", "author": "Mary Johnson, William Pitt", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/web-design-101.png" },
+    { "id": 17, "title": "Creative Selection", "author": "Ken Kocienda", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/creative-selection.png" },
+    { "id": 18, "title": "The Power of Habit", "author": "Charles Duhigg", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-power-of-habit.png" },
+    { "id": 19, "title": "The Making of a Manager", "author": "Julie Zhuo", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-making-of-a-manager.png" },
+    { "id": 20, "title": "Hooked", "author": "Nir Eyal, Ryan Hoover", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/hooked.png" },
+    { "id": 21, "title": "Crossing the Chasm", "author": "Geoffrey A. Moore", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/crossing-the-chasm.png" },
+    { "id": 22, "title": "Don't Make me Think", "author": "Steve Krug", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/dont-make-me-think.png" },
+    { "id": 23, "title": "The Design of Everyday Things", "author": "Don Norman", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-design-of-everyday-things.png" },
+    { "id": 24, "title": "Sprint", "author": "Jake Knapp", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/sprint.png" },
+    { "id": 25, "title": "Change By Design", "author": "Tim Brown", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/change.png" },
+    { "id": 26, "title": "Web Design 101", "author": "Mary Johnson, William Pitt", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/web-design-101.png" },
+    { "id": 27, "title": "Creative Selection", "author": "Ken Kocienda", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/creative-selection.png" },
+    { "id": 28, "title": "The Power of Habit", "author": "Charles Duhigg", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-power-of-habit.png" },
+    { "id": 29, "title": "The Making of a Manager", "author": "Julie Zhuo", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/the-making-of-a-manager.png" },
+    { "id": 30, "title": "Hooked", "author": "Nir Eyal, Ryan Hoover", "pages": 150, "publisher": "Editora Loyola", "year": 2020, "cover": "../../../assets/books/hooked.png" }
+  ]
+}

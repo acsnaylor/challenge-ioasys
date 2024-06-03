@@ -1,0 +1,61 @@
+<div class="w-full max-w-7xl relative z-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div *ngFor="let book of books" class="book-card" (click)="openModal(book)">
+      <div class="flex items-center justify-center">
+        <img [src]="book.cover" alt="{{ book.title }}" class="">
+      </div>
+      <div class="pl-4 flex flex-col justify-between h-full">
+        <div class="book-title">
+          <h3 class="font-semibold text-gray-800">{{ book.title }}</h3>
+          <p class="text-pink-600">{{ book.author }}</p>
+        </div>
+        <div class="book-info">
+          <p class="text-gray-600">{{ book.pages }} páginas</p>
+          <p class="text-gray-600">Editora {{ book.publisher }}</p>
+          <p class="text-gray-600">Publicado em {{ book.year }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-end items-center mt-8 gap-4">
+    <span class="text-gray-600">
+      Página <span>{{ page }}</span> de <span>{{ totalPages }}</span>
+    </span>
+    <button (click)="previousPage()" [disabled]="page === 1" class="pagination-button text-gray-600 hover:text-gray-800 disabled:text-gray-300" aria-label="Anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button (click)="nextPage()" [disabled]="page === totalPages" class="pagination-button text-gray-600 hover:text-gray-800 disabled:text-gray-300" aria-label="Próxima">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div *ngIf="selectedBook" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+  <div class="bg-white rounded-lg p-8 max-w-3xl w-full mx-4 relative">
+    <div class="flex flex-col sm:flex-row book-modal">
+      <img [src]="selectedBook.cover" alt="{{ selectedBook.title }}" class="image-modal w-full sm:w-auto sm:max-w-xs mx-auto sm:mx-0">
+      <div class="ml-0 sm:ml-8 flex flex-col justify-between flex-grow mt-4 sm:mt-0">
+        <div>
+          <h3 class="text-3xl font-semibold text-gray-800">{{ selectedBook.title }}</h3>
+          <p class="text-pink-600">{{ selectedBook.author }}</p>
+          <div class="mt-4 modal-info">
+            <p class="font-semibold text-gray-800">INFORMAÇÕES</p>
+            <p class="text-gray-800">Páginas: <span class="text-gray-700">{{ selectedBook.pages }}</span></p>
+            <p class="text-gray-800">Editora: <span class="text-gray-700">{{ selectedBook.publisher }}</span></p>
+            <p class="text-gray-800">Publicação: <span class="text-gray-700">{{ selectedBook.year }}</span></p>
+            <p class="text-gray-800">Idioma: <span class="text-gray-700">Inglês</span></p>
+            <p class="text-gray-800">Título Original: <span class="text-gray-700">{{ selectedBook.title }}</span></p>
+            <p class="text-gray-800">ISBN-10: <span class="text-gray-700">0062856626</span></p>
+            <p class="text-gray-800">ISBN-13: <span class="text-gray-700">978-0062856623</span></p>
+          </div>
+        </div>
+        <div class="mt-4 resenha">
+          <h4 class="font-semibold text-gray-800">RESENHA DA EDITORA</h4>
+          <p class="text-gray-700 text-sm resenha-text">"The subject of “design thinking” is the rage at business schools, throughout corporations, and increasingly in the popular press—due in large part to the work of IDEO, a leading design firm, and its celebrated CEO, Tim Brown, who uses this book to show how the techniques and strategies of design belong at every level of business.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="absolute modal-close top-4 right-4 text-gray-600 hover:text-gray-800 z-50" (click)="closeModal()">×</button>
+</div>
